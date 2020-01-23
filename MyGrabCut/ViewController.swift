@@ -176,7 +176,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
          */
 
         undoButton.frame = CGRect(x: mainScreen.size.width - CGFloat(smallButtonWidth), y: (screenCenter.y - ((mainScreen.size.height - mainScreen.size.width) / 4) - (mainScreen.size.width / 2)) + mainScreen.size.width, width: CGFloat(smallButtonWidth), height: 50)
-        undoButton.center = CGPoint(x: mainScreen.size.width / 5 * 4, y: (moveImgButton.center.y ?? 0.0) + 60)
+        undoButton.center = CGPoint(x: mainScreen.size.width / 5 * 4, y: (moveImgButton.center.y ) + 60)
         undoButton.backgroundColor = UIColor.white
         undoButton.layer.cornerRadius = 5
         undoButton.setTitle("redo", for: .normal)

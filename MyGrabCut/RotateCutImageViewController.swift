@@ -69,8 +69,8 @@ class RotateCutImageViewController: UIViewController, UIGestureRecognizerDelegat
     }
 
     func setImageRect(_ setRect: CGRect, andImage setImage: UIImage?) {
-        showImgView?.frame = setRect
         DispatchQueue.main.async {
+            self.showImgView?.frame = setRect
             self.showImgView?.image = setImage
         }
     }
